@@ -1,0 +1,120 @@
+body {
+  font-family: "Circular Std";
+  font-weight: 400;
+  /*font-size: 16px;*/
+  line-height: 1.7;
+  color: $primary-text-color;
+}
+
+@mixin main-title {
+  font-family: Playfair Display;
+  font-size: 64px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 72px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin small-title {
+  font-family: Circular Std;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 72px;
+  letter-spacing: 0px;
+  text-align: center;
+
+}
+
+@mixin news-title {
+  font-family: Circular Std;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+@mixin news-text {
+  font-family: Circular Std;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+@mixin big-subtitle {
+  font-family: Circular Std;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: center;
+
+}
+
+@mixin big-subtitle-2 {
+  font-family: Circular Std;
+  font-size: 43px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 45px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+@mixin primary-text{
+  font-family: Circular Std;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 450;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: left;
+
+}
+
+@mixin btn-text {
+  font-family: Circular Std;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
+
+@mixin link {
+  font-family: Circular Std;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+
+}
+
+@mixin small-subtitle {
+  font-family: Circular Std;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 450;
+  letter-spacing: 0px;
+  text-align: center;
+}
+
+@mixin price {
+  font-family: Circular Std;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 20px;
+  letter-spacing: 0.05em;
+  text-align: center;
+
+}

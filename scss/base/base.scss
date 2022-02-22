@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Circular Std';
+  src: url('../../fonts/CircularStd-Medium.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  url('../../fonts/circular-std-medium-500.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5, Opera 10+, Safari 3—5 */
+}
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+
+}
+
+body {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+
+  background-color: $background-color;
+
+}
+ main{
+   width: 1440px;
+   display: flex;
+   justify-content: flex-start;
+   flex-direction: column;
+
+   @include respond(tab-land){
+     width: 1200px;
+   }
+   @include respond(tab-port){
+     width: 900px;
+   }
+
+   @include respond(phone){
+     width: 600px;
+   }
+ }

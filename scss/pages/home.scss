@@ -1,0 +1,385 @@
+
+
+.section-learn-more {
+  @include basic-setup($background-color);
+
+  background-image: url("../../img/img.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+  &_title-box {
+
+    width: 331px;
+
+    padding-top: 111px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .subtitle-box{
+    padding-top: 35px;
+    width: 219px;
+
+  }
+  .main-btn{
+    padding-top: 83px;
+  }
+  h1 {
+    @include main-title;
+  }
+
+  p {
+    @include primary-text;
+  }
+
+  @include respond(tab-land){
+    width: 100%;
+  }
+  @include respond(tab-port){
+    width: 100%;
+  }
+
+  @include respond(phone){
+    display: flex;
+    justify-content: center;
+    background-position: top center;
+    &_title-box {
+      width: 331px;
+      padding-top: 111px;
+
+    }
+
+  }
+}
+
+.section-choose-style{
+  @include basic-setup($background-color);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  &_title {
+    @include small-title;
+
+    width: 337px;
+    height: 66px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 49px;
+  }
+
+  &_subtitle {
+    @include big-subtitle;
+
+    width: 450px;
+    height: 136px;
+  }
+
+  &_btn{
+    margin-top: 55px;
+  }
+
+  &_images {
+    height: 468px;
+    width: 100%;
+    margin-top: 78px;
+
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  #img1 {
+    background-image: url("../../img/img_1.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left;
+    width: 279px;
+  }
+
+  #img2 {
+    background-image: url("../../img/img_2.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 290px;
+  }
+  #img3 {
+    background-image: url("../../img/img_3.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 315px;
+  }
+  #img4 {
+    background-image: url("../../img/img_4.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 304px;
+  }
+  #img5 {
+    background-image: url("../../img/img_5.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    width: 298px;
+  }
+
+
+}
+
+.section-buy-crystal {
+  @include basic-setup($background-color);
+
+  background-image: url("../../img/img_6.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: 50%;
+  display: flex;
+
+  &_container {
+    width: 50%;
+    //height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_title-container{
+    width: 430px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .logo {
+    width: 135px;
+    height: 28px;
+    background-image: url("../../img/logo.png");
+    background-size: contain;
+
+  }
+  .main-title {
+    @include main-title;
+    width: 430px;
+    height: 144px;
+    padding-top: 10px;
+    text-align: center;
+  }
+  .about {
+    @include big-subtitle-2;
+
+    height: 366px;
+    padding-top: 10px;
+  }
+
+  .buy {
+    padding-top: 10px;
+  }
+   .learn-more{
+      @include link;
+
+     padding-top: 31px;
+   }
+
+  @include respond(tab-land){
+    width: 100%;
+  }
+  @include respond(tab-port){
+    width: 100%;
+  }
+
+  @include respond(phone){
+    width: 100%;
+    background-size: contain;
+    //flex-direction: column-reverse;
+    align-items: center;
+
+    &_container:first-child {
+      width: 0;
+    }
+    &_container {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .about {
+
+      height: calc(366px - 20%);
+
+    }
+  }
+}
+
+.section-buy-urban {
+  @include basic-setup($urban-background);
+
+  position: relative;
+
+  background-image: url("../../img/urban-left.png"), url("../../img/urban-right.png");
+  background-repeat: no-repeat;
+  background-size: 604px 711px, 481px 957px;
+  background-position: 49px 235px, 815px 0px;
+
+  display: flex;
+  justify-content: center;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 458px;
+
+    padding-top: 140px;
+    .title{
+      @include big-subtitle;
+    }
+
+    .subtitle{
+      @include small-subtitle;
+      padding-top: 22px;
+    }
+
+    .price {
+      @include price;
+
+      padding-top: 20px;
+    }
+
+    .urban-btn{
+      margin-top: 24px;
+      padding: 18px 27px;
+    }
+  }
+}
+
+.section-immune-system{
+  @include basic-setup($immune-background);
+
+  //@include respond(tab-land){
+  //
+  //}
+  //@include respond(tab-port){
+  //  display: flex;
+  //  justify-content: center;
+  //  width: 100%;
+  //@include respond(phone){
+  //  display: flex;
+  //  justify-content: center;
+  //  width: 100%;
+  //}
+  //}
+  &__polaroid{
+    width: 552px;
+    height: 640px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    position: absolute;
+    top:  62px;
+    left: 91px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 41px;
+
+    .title{
+      width: 100%;
+      height: 28px;
+      background-image: url("../../img/immune-system.png");
+      background-repeat: no-repeat;
+      background-size: 226px 28px;
+      margin-top: 38px;
+      margin-bottom: 22px;
+
+    }
+
+    .image{
+      img {
+      width: 508px;
+      height: 509px;
+
+      }
+    }
+    @include respond(tab-land){
+      width: 1200px;
+    }
+    @include respond(tab-port){
+      display: none;
+    }
+    @include respond(phone){
+      display: none;
+    }
+  }
+
+  &__news {
+    width: 552px;
+    position: absolute;
+    top:  209px;
+    right: 98px;
+
+    .item{
+      background-color: $card-background;
+      
+      height: 176px;
+      padding: 29px 22px;
+      display: flex;
+      gap: 15px
+
+      img {
+        width: 118px;
+        height: 118px;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+
+        .title{
+          @include news-title;
+        }
+        .text {
+          @include news-text;
+
+          padding-top: 10px;
+        }
+
+        .info {
+          @include news-text;
+
+          padding-top: 22px;
+        }
+      }
+    }
+    .item:first-child {
+      border-radius: 30px 30px 0 0;
+    }
+    .item:last-child {
+      border-radius: 0 0 30px 30px;
+    }
+
+    @include respond(tab-port){
+      position: relative;
+      width: 100%;
+      top: 0;
+      right: 0;
+      padding: 1rem;
+
+    }
+    @include respond(phone){
+      position: relative;
+      width: 100%;
+      top: 0;
+      right: 0;
+      padding: 1rem;
+
+    }
+  }
+
+
+}
